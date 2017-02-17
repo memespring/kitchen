@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <div id="message">
+    <span>Wait a minute</span>
+</div>
+<script>
+// Only BigText on “new-ish” browsers
+if( 'querySelectorAll' in document ) {
+    $('#message').bigtext();    
+}
+</script>
+{% endblock %}
