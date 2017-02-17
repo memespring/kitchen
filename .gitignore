@@ -4,3 +4,4 @@ lib
 .Python
 *.pyc
 static/vendor
+app.db
