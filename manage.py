@@ -9,8 +9,8 @@ def importdata():
 
     with app.test_request_context():
         table = db['data']
-        table.upsert(dict(key="1", message='sausages,chips,beans'))
-        table.upsert(dict(key="2", message='greens,carrots,sprouts'))
+        table.upsert(dict(key="1", message='sausages,chips,beans'), ['key'])
+        table.upsert(dict(key="2", message='greens,carrots,sprouts'), ['key'])
    
 
 if __name__ == "__main__":
